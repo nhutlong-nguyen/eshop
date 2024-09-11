@@ -8,7 +8,7 @@ node_modules
 # testing
 /coverage
 
-# production
+# productionpref
 /build
 
 # misc
