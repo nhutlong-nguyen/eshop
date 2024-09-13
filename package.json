@@ -1,0 +1,23 @@
+{
+  "name": "e-shop",
+  "version": "1.0.0",
+  "description": "eCommerce application build with the MERN stack",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client \""
+  },
+  "author": "Long Nguyen",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1",
+    "dotenv": "^16.4.5",
+    "nodemon": "^3.1.4"
+  }
+}
