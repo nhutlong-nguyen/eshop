@@ -13,7 +13,8 @@
   "author": "Long Nguyen",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.21.0"
+    "express": "^4.21.0",
+    "mongoose": "^8.6.2"
   },
   "devDependencies": {
     "concurrently": "^9.0.1",
