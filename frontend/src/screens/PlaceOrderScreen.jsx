@@ -38,7 +38,7 @@ const PlaceOrderScreen = () => {
 
       console.log("Order created:", res); // Add this log to inspect the response
       dispatch(clearCartItems());
-      navigate(`/orders/${res._id}`);
+      navigate(`/order/${res._id}`);
     } catch (err) {
       console.error("Error occurred:", err); // Log the error to see what it contains
       toast.error(err?.data?.message || "Something went wrong");
