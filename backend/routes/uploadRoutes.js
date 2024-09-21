@@ -25,9 +25,12 @@ function checkFileType(file, cb) {
     cb("Images only!");
   }
 }
-
+//edited, add fileFilter
 const upload = multer({
   storage,
+  fileFilter: function (req, file, cb) {
+    checkFileType(file, cb); // Use the checkFileType function here
+  },
 });
 
 router.post("/", upload.single("image"), (req, res) => {
